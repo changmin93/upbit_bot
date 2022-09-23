@@ -76,7 +76,6 @@ def get_yesterday_ma15(ticker):
     close = df_get_yesterday_ma15['close']
     ma = close.rolling(window=5).mean()
     return ma[-2]
-
 # 객체 생성
 load_dotenv()
 access = "여기에 upbit-access-key 넣어주세요"
